@@ -28,4 +28,15 @@ public class LinkList {
 					System.out.println();
 			}
 		}
+		
+		public static ListNode getNthNode(ListNode node,int n) {
+			int i=1;
+			while(node!=null) {
+				if(i++==n) {
+					return node;
+				}
+				node=node.next;
+			}
+			return null;
+		}
 }
